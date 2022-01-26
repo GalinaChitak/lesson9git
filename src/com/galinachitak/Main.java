@@ -24,5 +24,13 @@ public class Main {
     }
 
     private static String helloWorld() {
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < 99; i++) {
+            result.append(1 + "");
+            System.out.println(i % 3 == 0 && i % 5 == 0 ? " HelloWorld" : i % 3 == 0 ? "Hello" : i % 5 == 0
+                    ? "World" : i);
+        }
+        return null;
     }
 }
