@@ -19,5 +19,10 @@ public class Main {
         System.out.println("Общая сумма: " + interest);
         input.close();
 
+        helloWorld();
+
+    }
+
+    private static String helloWorld() {
     }
 }
