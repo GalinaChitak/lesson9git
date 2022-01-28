@@ -39,12 +39,17 @@ public class Main {
 
 
         StringBuilder result = new StringBuilder();
-
-        for (int i = 0; i < 99; i++) {
-            result.append(1 + "");
-            System.out.println(i % 3 == 0 && i % 5 == 0 ? " HelloWorld" : i % 3 == 0 ? "Hello" : i % 5 == 0
-                    ? "World" : i);
+        for (int i = 1; i <= 99; i++) {
+            if ((i % 3 == 0) && (i % 5 == 0))
+                System.out.println( i + "HelloWorld ");
+            else if (i % 3 == 0)
+                System.out.println( i + "Hello ");
+            else if (i % 5 == 0)
+                System.out.println( i + " World");
+            else System.out.println(+ i);
         }
-        return null;
+        return result.toString().trim();
     }
+
+
 }

@@ -12,15 +12,16 @@ public class lesson9binary {
 
         System.out.println("Введите масив из 6 чисел");
 
-        for (counter = 0; counter < 6; counter++)
+        for (counter = 0; counter < 6; counter++) {
             array[counter] = input.nextInt();
 
-        System.out.println("Введите элемент для  поиска: ");
-        item = input.nextInt();
-        first = 0;
-        last = 6 - 1;
+            System.out.println("Введите элемент для  поиска: ");
+            item = input.nextInt();
+            first = 0;
+            last = 6 - 1;
 
-        binarySearch(array, first, last, item);
+            binarySearch(array, first, last, item);
+        }
     }
 
     public static void binarySearch(int[] array, int first, int last, int item) {
