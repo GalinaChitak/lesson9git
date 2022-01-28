@@ -25,6 +25,7 @@ public class Main {
         input.close();
 
         helloWorld();
+        helloWorld1();
 
     }
 
@@ -40,15 +41,21 @@ public class Main {
 
         StringBuilder result = new StringBuilder();
         for (int i = 1; i <= 99; i++) {
-            if ((i % 3 == 0) && (i % 5 == 0))
-                System.out.println( i + "HelloWorld ");
-            else if (i % 3 == 0)
-                System.out.println( i + "Hello ");
-            else if (i % 5 == 0)
-                System.out.println( i + " World");
-            else System.out.println(+ i);
+            if ((i % 3 == 0) && (i % 5 == 0)) {
+                result.append("HelloWorld ");
+            } else if (i % 3 == 0) {
+                result.append("Hello ");
+            }else if (i % 5 == 0) {
+                result.append("World ");
+            } else {
+                result.append(i).append(" ");
+            }
         }
         return result.toString().trim();
+    }
+    public static void helloWorld1(){
+        System.out.println(helloWorld());
+
     }
 
 
